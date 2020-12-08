@@ -1,0 +1,77 @@
+    *{
+        margin: 0;
+        padding:0;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+    }
+
+    .titulo{
+        color: #fad000;
+        display: flex;
+        margin-left: 20%;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .cabecalho-nav{
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .filmes{
+        background-color: #fad000;
+        border-radius: 5px;
+        text-decoration: none;
+        color: black;
+        margin-right:10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .series{
+        background-color: #fad000;
+        border-radius: 5px;
+        text-decoration: none;
+        color: black;
+        margin-right:10px ;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contato{
+        background-color: #fad000;
+        border-radius: 5px;
+        text-decoration: none;
+        color: black;
+        margin-right:10px ;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sobre{
+        background-color: #fad000;
+        border-radius: 5px;
+        text-decoration: none;
+        color: black;
+        margin-right:10px ;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .sereia{
+        margin-top: 50px;
+        max-width: 400px;
+        max-height: 400px;
+    }

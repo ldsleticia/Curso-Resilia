@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#000000;
+    list-style:none;
+}
+
+#menu ul li { 
+    display: inline; 
+}
+
+#menu ul li a {
+    padding: 10px 10px;
+    display: inline-block;
+    /* visual do link */
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10%;
+}
+
+/* #menu ul li a:hover{
+    color: #fad000;
+} */
+
+#inicio:hover{
+    color: #fad000;
+}
+
+#sobre:hover{
+    color: #fad000;
+}
+
+#como:hover{
+    color: #fad000;
+}
+
+#pagamento:hover{
+    color: #fad000;
+}
+
+#empresas:hover{
+    color: #fad000;
+}
+
+h1{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 32px;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.resilia{
+    padding-bottom: 10px;
+}
+
+.input{
+    width: 30%;
+	padding: 20px;
+	border: 3px solid #fad000;
+	margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left: 32%;
+    font-size: 15px;
+    
+}
+/* .input:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+} */
+.inscrever{
+    padding-bottom: 50px;
+}
+
+.nome{
+    background: #FFFFFF;
+    padding: 3px 3px 3px 25px;
+} 
+
+.email{
+    background: #FFFFFF;
+    padding: 3px 3px 3px 25px;
+}
+
+.telefone{
+    background: #FFFFFF;
+    padding: 3px 3px 3px 25px;
+}
+
+.button{
+    width: 30%; /* muda o tamanho para o lado do quadro */
+	padding: 20px; /* muda o tamanho pra cima e pra baixo do quadro onde coloca informação */
+	background-color:  #fad000;
+	margin-bottom: 10px;
+    border-radius: 50px;
+    margin-left: 33%;
+    outline: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+span{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fad000;
+}

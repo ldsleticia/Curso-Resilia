@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula Js m2</title>
+  </head>
+  <body>
+    <button onclick="disparar()">CLIQUE</button>
+    <script>
+      //const nomes = ["letícia", "amanda", "analice"];
+      function imprimeNome(nome) {
+        //console.log("imprime");
+        alert(nome);
+        //console.log(typeof(nome));
+      }
+      function disparar() {
+        const nomes = ["letícia", "amanda", "analice"];
+        for (let i = 0; i < nomes.length; i++) {
+          //console.log(typeof(nomes[i]));
+          document.write("<button onClick='imprimeNome(" + '"' + nomes[i] + '"' + ")'>"+ nomes[i] + "</button>")
+         /*  document.write(
+             `<button onClick="imprimeNome('${nomes[i]}')">${nomes[i]}</button>`
+           ); */
+        }
+      }
+    </script>
+  </body>
+</html>

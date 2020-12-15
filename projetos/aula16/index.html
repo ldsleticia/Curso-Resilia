@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula Js</title>
+  </head>
+  <body>
+    <button onclick="exibeNomes()">CLIQUE</button>
+    <script>
+      function exibeNomes() {
+        const nomes = ["letícia", "amanda", "analice"];
+        for (n in nomes) {
+          var x = document.createElement("BUTTON");
+          var t = document.createTextNode(`${nomes[n]}`);
+          x.id = `${nomes[n]}`;
+          x.onclick = function () {
+            alert(this.id);
+            return false;
+          };
+          x.appendChild(t);
+          document.body.appendChild(x);
+        }
+      }
+    </script>
+  </body>
+</html>

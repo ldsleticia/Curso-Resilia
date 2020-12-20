@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inflação</title>
+  </head>
+  <body>
+    <script>
+      const alimentosPrecos = {
+        tomate: [3.3, 4.7],
+        arroz: [2.99, 3.25],
+        cenoura: [3.99, 4.14],
+      };
+      /*
+      * @param <Number> p1
+      * p1 : preço inical
+      * p2: preço final
+      * i: inflação dos produtos
+      */
+      function inflacaoProduto(p1, p2) {
+        return ((p2 - p1) / p1) * 100;
+      }
+
+      function mediaDasInflacoes(i1, i2, i3) {
+        return (i1 + i2 + i3) / 3;
+      }
+
+      function estimativaInflacao(p1, p2) {
+        return (p2 - p1) / 6;
+      }
+
+      function quebraLinha(){
+        document.write("<br/><br/>");
+      }
+
+      let inflaTomate = inflacaoProduto(alimentosPrecos.tomate[0], alimentosPrecos.tomate[1]);
+      let inflaArroz = inflacaoProduto(alimentosPrecos.arroz[0], alimentosPrecos.arroz[1]);
+      let inflaCenoura = inflacaoProduto(alimentosPrecos.cenoura[0], alimentosPrecos.cenoura[1]);
+
+      document.write(`A inflação do tomate foi de ${inflaTomate.toFixed(2)}%`);
+      quebraLinha();
+
+      document.write(`A inflação do arroz foi de ${inflaArroz.toFixed(2)}%`);
+      quebraLinha();
+
+      document.write(`A inflação da cenoura foi de ${inflaCenoura.toFixed(2)}%`);
+      quebraLinha();
+
+      document.write(`A inflação média dos três produtos foi de ${mediaDasInflacoes(inflaTomate, inflaArroz, inflaCenoura).toFixed(2)}%`)
+      quebraLinha();
+
+      document.write(`A estimativa de inflação para a próxima semana para o tomate é de ${estimativaInflacao(alimentosPrecos.tomate[0], alimentosPrecos.tomate[1]).toFixed(2)} centavos por dia`);
+      quebraLinha();
+
+      document.write(`A estimativa de inflação para a próxima semana para o arroz é de ${estimativaInflacao(alimentosPrecos.arroz[0], alimentosPrecos.arroz[1]).toFixed(2)} centavos por dia`);
+      quebraLinha();
+
+      document.write(`A estimativa de inflação para a próxima semana para a cenoura é de ${estimativaInflacao(alimentosPrecos.cenoura[0], alimentosPrecos.cenoura[1]).toFixed(2)} centavos por dia`);
+      quebraLinha();
+    </script>
+  </body>
+</html>

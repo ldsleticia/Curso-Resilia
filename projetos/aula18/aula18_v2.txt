@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /* Gente! Eu tenho um array de números e quero fazer uma função para somá-los, mas encontrei
+um problema! O array que eu ganhei tinha números negativos e eu não quero somá-los! Você
+pode me ajudar? */
+
+            var array = [10, 0, -2, -4, 70, -8, 30];
+            function teste() {
+            var positivos = 0;
+
+                for (var i = 0; i < array.length; i++) {
+
+                    if (array[i] > 0) {
+                        positivos = array[i] + positivos;
+                    }  
+          
+            }
+            
+            console.log("A soma de positivos é: " + positivos);
+            
+            }
+
+        </script>
+    </body>
+</html>

@@ -14,6 +14,6 @@ function cores(cor){
     }
 }
 
-let corDoSemaforo = prompt("Qual cor está o semáforo?");
+let corDoSemaforo = prompt("Qual cor está o semáforo?");//use isso como parâmetro da função se não você não vai conseguir que a função pegue o que está dentro das condições do swith case e retornará sempre uma coisa diferente do esperado. Sempre se lembre que se você passou um parâmetro na criação da função, precisa passar um parâmetro na chamada da função.
 
 cores(corDoSemaforo);

@@ -9,8 +9,9 @@ const presencaSemana = [ presencaSegunda, presencaTerca, presencaQuarta, presenc
 function presencaSemanal(pSemana){
     for(let row = 0; row < pSemana.length; row++)
         for(let col = 0; col < pSemana[row].length; col++) {
-            console.log(`MAT[${row}][${col}] = ${pSemana[row][col]}`)
+            //console.log(`MAT[${row}][${col}] = ${pSemana[row][col]}`) //PERCORRENDO UM ARRAY BI-DIM E MOSTRANDO SEUS VALORES NO COSOLE
+            //CALCULANDO A PORCENTAGEM DE PRESENÇA EM CADA DIA DE AULA
+            console.log(`DIA ${row} = ${(pSemana[row].length / 5) * 100}`);
         }
 }
-
 presencaSemanal(presencaSemana);

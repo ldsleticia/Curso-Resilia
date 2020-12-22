@@ -81,6 +81,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 100vh;
     /* margin-top: 10px; */
     /* height: 40px;*/    
     background-color: #000000;
@@ -103,17 +104,6 @@ ul li a{
 }
 
 ul li a .fa{
-    font-size: 10px;
-    color: #222;
-}
-
-ul li ::before{
-    font-family: fontAwesome;
-    position: absolute;
-    top: 0;
-    left: 0;
     font-size: 25px;
-    height: 0;
-    /* overflow: hidden; */
-    transition: 0.5s ease-in-out;
+    color: #fad000;
 }
